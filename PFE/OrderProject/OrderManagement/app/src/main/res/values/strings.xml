@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Gestion des commandes</string>
+    <string name="msg_error_mail">Adresse e-mail invalide</string>
+    <string name="msg_error_pass">La longueur minimale du mot de passe doit être de 6 caractères.</string>
+    <string name="msg_progress_title_login">Connexion en cours…</string>
+    <string name="msg_progress_message_login">Veuillez patienter…</string>
+    <string name="ajouter_une_commande">Ajouter une commande</string>
+    <string name="ins_rer_le_nom">Insérer le nom</string>
+    <string name="ins_rer_la_description">Insérer la description</string>
+    <string name="ajouter_ce_produit">ajouter ce produit</string>
+    <string name="ajouter_un_produit">Ajouter un produit</string>
+    <string name="ins_rer_le_prix">Insérer le prix</string>
+    <string name="ins_rer_la_quantit">Insérer la quantité</string>
+    <string name="ajouter_cette_commande">ajouter cette commande</string>
+    <string name="connexion">Connexion</string>
+    <string name="liste_des_commandes">Liste des commandes</string>
+    <string name="mettre_jour_une_commande">mettre à jour une commande</string>
+    <string name="mettre_jour_cette_commande">mettre à jour cette commande</string>
+    <string name="supprime_ce_produit">Supprimer ce produit</string>
+    <string name="mettre_jour_ce_produit">Mettre à jour ce produit</string>
+    <string name="modifier_le_produit">MODIFIER LE PRODUIT</string>
+
+</resources>

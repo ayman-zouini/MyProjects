@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.OrderManagement"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.MainActivityLauncher"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.MainActivityProductsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivityCommandsDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivityCommands"
+            android:exported="false" />
+
+        <service
+            android:name=".LocationUploadService"
+            android:enabled="true"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>
