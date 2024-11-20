@@ -37,7 +37,7 @@ def charger_et_nettoyer_donnees(path):
     print("Nettoyage des données terminé.")
     
     # Sauvegarder les données nettoyées dans un nouveau fichier JSON
-    df.to_json('C:/Users/errt/OneDrive/Bureau/Projets/Data-Analyste/Python/Prix/NewData.json', orient='records', force_ascii=False, indent=4)
+    df.to_json('C:/Users/errt/OneDrive/Bureau/Projets/Data/Python/Prix/NewData.json', orient='records', force_ascii=False, indent=4)
     print("Données nettoyées sauvegardées dans 'NewData.json'.")
     
     return df
@@ -90,7 +90,7 @@ def visualisations_prix(df):
 
 # Menu principal
 def main():
-    chemin = 'C:/Users/errt/OneDrive/Bureau/Projets/Data-Analyste/Python/Prix/Data.json'
+    chemin = 'C:/Users/errt/OneDrive/Bureau/Projets/Data/Python/Prix/Data.json'
     df = charger_et_nettoyer_donnees(chemin)
     stats = statistiques_prix(df)
     
