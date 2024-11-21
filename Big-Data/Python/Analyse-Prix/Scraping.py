@@ -32,7 +32,7 @@ if response.status_code == 200:
 
     # Sauvegarder les données dans un fichier JSON
     try:
-        with open("C:/Users/errt/OneDrive/Bureau/Projets/Data/Python/Prix/Data.json", "w", encoding='utf-8') as file:
+        with open("C:/Users/errt/OneDrive/Bureau/Projets/Big-Data/Python/Analyse-Prix/Data.json", "w", encoding='utf-8') as file:
             json.dump(data, file, ensure_ascii=False, indent=4)
         print("Les données sont sauvegardées avec succès.")
     except Exception as e:
