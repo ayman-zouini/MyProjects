@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard des prix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px; /* Limite la largeur pour éviter une trop grande taille */
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            background-color: #ffffff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Statistiques des prix :</h1>
+        <ul>
+            <li>Prix minimum : {{ stats['Prix minimum'] }} Dhs</li>
+            <li>Prix maximum : {{ stats['Prix maximum'] }} Dhs</li>
+            <li>Prix moyen : {{ stats['Prix moyen'] }} Dhs</li>
+            <li>Médiane : {{ stats['Médiane'] }} Dhs</li>
+            <li>Écart-type : {{ stats['Écart-type'] }} Dhs</li>
+            <li>Nombre total : {{ stats['Nombre total'] }}</li>
+        </ul>
+        <a href="/visualisations">Voir les visualisations</a>
+    </div>
+</body>
+</html>
